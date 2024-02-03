@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('C:/Users/Mary/OneDrive/Desktop/project2/tryfinal.png');
+    font-family: "sweet-sans-pro", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 90px 0;
+    padding: 10px;
+
+}
+
+
+.title {
+    color: #bb5a5f;
+    text-align: center;
+    margin-top: 20px;
+    font: 100 20px "sweet-sans-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.subtitle {
+    color: #f0b085;
+    font-size: 15px;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -35px;
+    margin-left: -150px;
+}
+
+
+
+.image-wrapper {
+    background-color: #da9575;
+    z-index: 1;
+    margin-left: 60px;
+    width: 1px;
+    height: 55px;
+    position: relative;
+    top: -195px;
+    visibility: hidden;
+
+}
+
+
+
+.div-3 {
+    background-color: #da9575;
+    align-self: stretch;
+    min-height: 1px;
+    width: 117%;
+    margin-top: -195px;
+    margin-left: -130px;
+    visibility: hidden;
+
+}
+
+
+.month-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* Or use other options like space-between, space-evenly, etc. */
+    align-items: center;
+    /* Adjust this based on your design */
+    margin-top: -330px;
+    /* Adjust the top margin as needed */
+    margin-left: 100px;
+}
+
+.dates.highlight {
+    color: #bb5a5f;
+    font-size: 16px;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    cursor: default;
+}
+
+.dates.highlight.clicked {
+    color: #8b0000;
+    text-decoration: underline;
+}
+
+.day-container {
+    display: inline-block;
+    justify-content: space-around;
+    /* Or use other options like space-between, space-evenly, etc. */
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 170px;
+    font-size: 0;
+}
+
+.day-container .dates {
+    /* Adjust the width as needed */
+    text-align: center;
+    font-size: 12px;
+    margin: 0 18px;
+}
+
+.month-container .highlight.clicked,
+.day-container .highlight.clicked {
+    font-weight: bolder;
+}
+
+
+body {
+    font-family: "sweet-sans-pro", sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    /* Center the container horizontally */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgb(199, 192, 192);
+    background-image: url('C:/Users/Mary/OneDrive/Desktop/project2/trysquares.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: auto;
+    /* Center the content */
+    align-items: center;
+    /* Center the content vertically */
+    font: 400 20px "sweet-sans-pro", sans-serif;
+    --text: #bb5a5f;
+    --check: #850107;
+    --disabled: #920109;
+    width: 700px;
+    height: 550px;
+    padding: 100px 55px;
+}
+
+.toDoList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* Center items horizontally */
+    margin-bottom: 1000px;
+    margin-top: -50px;
+}
+
+
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c46767;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    /* Position the button absolutely within its container */
+    top: 145px;
+    /* Adjust bottom to control the vertical position */
+    right: 650px;
+    /* Adjust right to control the horizontal position */
+    width: 80px;
+}
+
+#customItem {
+    position: absolute;
+    top: 140px;
+    /* Adjust the top position as needed */
+    left: 750px;
+    /* Adjust the left position as needed */
+    width: 200px;
+    margin: 10px auto;
+}
+
+
+.toDoList label {
+    color: var(--text);
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    width: fit-content;
+    user-select: none;
+    transition: color 0.3s ease;
+    text-decoration: none;
+
+}
+
+.toDoList label:first-child {
+    margin-top: 10;
+    /* No margin for the first item */
+}
+
+.toDoListContainer {
+    max-height: 500px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.toDoList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+}
+
+
+.toDoList li {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked+label {
+    color: var(--disabled);
+    animation: move 0.3s ease 0.1s forwards;
+}
+
+/* Rest of the CSS remains the same */
+
+label {
+    color: var(--text);
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    width: fit-content;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+label::before,
+label::after {
+    content: "";
+    position: absolute;
+}
+
+label::before {
+    height: 2px;
+    width: 8px;
+    left: -27px;
+    background: var(--check);
+    border-radius: 2px;
+    transition: background 0.3s ease;
+    /* the dash before cross out */
+}
+
+label::after {
+    height: 4px;
+    width: 4px;
+    top: 8px;
+    left: -25px;
+    border-radius: 50%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    height: 20px;
+    margin: 0 10px 0 0;
+    left: -30px;
+    top: 32px;
+    /* Adjust the left position as needed */
+}
+
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: auto;
+    background: var(--check);
+    border-radius: 2px;
+}
+
+input[type="checkbox"]::before {
+    right: 60%;
+    transform-origin: right bottom;
+}
+
+input[type="checkbox"]::after {
+    left: 40%;
+    transform-origin: left bottom;
+}
+
+input[type="checkbox"]:checked::before {
+    animation: check-01 0.4s ease forwards;
+
+}
+
+input[type="checkbox"]:checked::after {
+    animation: check-02 0.4s ease forwards;
+}
+
+input[type="checkbox"]:checked+label {
+    color: var(--disabled);
+    animation: move 0.3s ease 0.1s forwards;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background: var(--disabled);
+    animation: slice 0.4s ease forwards;
+}
+
+input[type="checkbox"]:checked+label::after {
+    animation: firework 0.5s ease forwards 0.1s;
+}
+
+.toDoList label::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 8px;
+    left: -27px;
+    /* Adjust the left position */
+    top: 50%;
+    /* Center the line vertically */
+    background: var(--check);
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+
+.toDoList label::after {
+
+    position: absolute;
+    top: 95%;
+    left: -30px;
+    margin-top: -15px;
+    /* Adjust to vertically center the checkmark */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background: var(--disabled);
+    transform: scaleX(1);
+    /* Display the strike-through */
+}
+
+input[type="checkbox"]:checked+label::after {
+    opacity: 1;
+
+}
+
+
+@keyframes move {
+    50% {
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+}
+
+@keyframes slice {
+    60% {
+        width: 100%;
+        left: 4px;
+    }
+
+    100% {
+        width: 100%;
+        left: -2px;
+        padding-left: 0;
+    }
+}
+
+
+@keyframes check-01 {
+    0% {
+        width: 4px;
+        top: auto;
+        transform: rotate(0);
+    }
+
+    50% {
+        width: 0px;
+        top: auto;
+        transform: rotate(0);
+    }
+
+    51% {
+        width: 0px;
+        top: 8px;
+        transform: rotate(45deg);
+    }
+
+    100% {
+        width: 5px;
+        top: 8px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes check-02 {
+    0% {
+        width: 4px;
+        top: auto;
+        transform: rotate(0);
+    }
+
+    50% {
+        width: 0px;
+        top: auto;
+        transform: rotate(0);
+    }
+
+    51% {
+        width: 0px;
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        width: 10px;
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+}
+
+
+@keyframes firework {
+    0% {
+        opacity: 1;
+        box-shadow:
+            0 0 0 -2px var(--check),
+            0 0 0 -2px var(--check),
+            0 0 0 -2px var(--check),
+            0 0 0 -2px var(--check),
+            0 0 0 -2px var(--check),
+            0 0 0 -2px var(--check),
+    }
+
+    30% {
+        opacity: 0;
+        box-shadow:
+            0 -15px 0 0px var(--check),
+            14px -8px 0 0px var(--check),
+            14px 8px 0 0px var(--check),
+            0 15px 0 0px var(--check),
+            -14px 8px 0 0px var(--check),
+            -14px -8px 0 0px var(--check);
+    }
+}
