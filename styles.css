@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("./tryfinal.png");
+    background-image: url(".//tryfinal.png");
     font-family: "sweet-sans-pro", sans-serif;
     background-position: center;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ body {
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgb(199, 192, 192);
-    background-image: url("./trysquares.jpg");
+    background-image: url(".//trysquares.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
