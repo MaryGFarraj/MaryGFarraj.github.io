@@ -134,8 +134,8 @@ body {
     /* Center the container horizontally */
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 5px 5px rgb(199, 192, 192);
-    background-image: url(".//trysquares.jpg");
+box-shadow: 0 5px 5px rgb(161, 149, 149);
+    background-color: rgb(249, 235, 222);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
