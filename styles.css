@@ -28,7 +28,7 @@ body {
 
 
 .title {
-    color: #bb5a5f;
+    color: #e7b299;
     text-align: center;
     margin-top: 20px;
     font: 100 20px "sweet-sans-pro", sans-serif;
@@ -85,7 +85,7 @@ body {
     /* Adjust this based on your design */
     margin-top: -330px;
     /* Adjust the top margin as needed */
-    margin-left: 100px;
+    margin-left: 10px;
 }
 
 .dates.highlight {
@@ -108,7 +108,7 @@ body {
     /* Or use other options like space-between, space-evenly, etc. */
     align-items: center;
     margin-top: 5px;
-    margin-left: 170px;
+    margin-left: 130px;
     font-size: 0;
 }
 
@@ -134,7 +134,7 @@ body {
     /* Center the container horizontally */
     padding: 50px;
     border-radius: 20px;
-box-shadow: 0 5px 5px rgb(161, 149, 149);
+    box-shadow: 0 5px 5px rgb(161, 149, 149);
     background-color: rgb(249, 235, 222);
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,33 +164,63 @@ box-shadow: 0 5px 5px rgb(161, 149, 149);
     margin-top: -50px;
 }
 
-
-
 button {
-    padding: 5px 10px;
+    padding: 0.30% 0.80%;
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     background-color: #c46767;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 0.80vw;
     position: absolute;
-    /* Position the button absolutely within its container */
-    top: 145px;
-    /* Adjust bottom to control the vertical position */
-    right: 650px;
-    /* Adjust right to control the horizontal position */
-    width: 80px;
+    top: 16%;
+    left: 30%;
+    transform: translateX(-50%);
 }
 
 #customItem {
     position: absolute;
-    top: 140px;
-    /* Adjust the top position as needed */
-    left: 750px;
-    /* Adjust the left position as needed */
-    width: 200px;
+    top: 10vh;
+    left: 9vw;
+    width: 10vw;
     margin: 10px auto;
 }
+
+/* Media query for smaller screens (laptops) */
+@media screen and (max-width: 1199px) {
+    #customItem {
+        top: 25vh;
+        /* Adjust top position for smaller screens */
+        left: 25vw;
+        /* Adjust left position for smaller screens */
+        width: 50%;
+        /* Adjust width for smaller screens */
+    }
+
+    button {
+        top: 40%;
+        /* Adjust top position for smaller screens */
+        left: 50%;
+        /* Adjust left position for smaller screens */
+    }
+}
+
+/* Media query for larger screens (monitors) */
+@media screen and (min-width: 1200px) {
+    #customItem {
+        top: 140px;
+        /* Adjust top position for larger screens */
+        left: 765px;
+        /* Adjust left position for larger screens */
+    }
+
+    button {
+        top: 148px;
+        /* Adjust top position for larger screens */
+        left: 980px;
+        /* Adjust left position for larger screens */
+    }
+}
+
 
 
 .toDoList label {
