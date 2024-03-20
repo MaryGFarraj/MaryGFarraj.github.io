@@ -73,7 +73,6 @@ body {
     margin-top: -195px;
     margin-left: -130px;
     visibility: hidden;
-
 }
 
 
@@ -149,8 +148,14 @@ body {
     --check: #850107;
     --disabled: #920109;
     width: 700px;
-    height: 550px;
+    /* height: 550px; */
+    max-height: 100%;
     padding: 100px 55px;
+}
+
+.todoListInput {
+    width: 100%;
+    text-align: center;
 }
 
 .toDoList {
@@ -171,55 +176,30 @@ button {
     background-color: #c46767;
     color: #ffffff;
     font-size: 0.80vw;
-    position: absolute;
+    /* position: absolute;
     top: 16%;
     left: 30%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
-#customItem {
+/* #absTest {
+  position: relative;
+  width: 50%;
+  height: 10px;
+}
+
+#absItem {
+  position: absolute;
+  right: 0;
+} */
+
+/* #customItem {
     position: absolute;
     top: 10vh;
     left: 9vw;
     width: 10vw;
     margin: 10px auto;
-}
-
-/* Media query for smaller screens (laptops) */
-@media screen and (max-width: 1199px) {
-    #customItem {
-        top: 25vh;
-        /* Adjust top position for smaller screens */
-        left: 25vw;
-        /* Adjust left position for smaller screens */
-        width: 50%;
-        /* Adjust width for smaller screens */
-    }
-
-    button {
-        top: 40%;
-        /* Adjust top position for smaller screens */
-        left: 50%;
-        /* Adjust left position for smaller screens */
-    }
-}
-
-/* Media query for larger screens (monitors) */
-@media screen and (min-width: 1200px) {
-    #customItem {
-        top: 140px;
-        /* Adjust top position for larger screens */
-        left: 765px;
-        /* Adjust left position for larger screens */
-    }
-
-    button {
-        top: 148px;
-        /* Adjust top position for larger screens */
-        left: 980px;
-        /* Adjust left position for larger screens */
-    }
-}
+} */
 
 
 
@@ -233,7 +213,6 @@ button {
     user-select: none;
     transition: color 0.3s ease;
     text-decoration: none;
-
 }
 
 .toDoList label:first-child {
