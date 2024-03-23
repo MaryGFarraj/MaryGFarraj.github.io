@@ -2,10 +2,11 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(".//tryfinal.png");
-    font-family: "sweet-sans-pro", sans-serif;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    font-family: "sweet-sans-pro", sans-serif;
+    height: 100vh;
 }
 
 .main-container {
@@ -13,7 +14,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding: 50px;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -79,11 +80,8 @@ body {
 .month-container {
     display: flex;
     justify-content: space-evenly;
-    /* Or use other options like space-between, space-evenly, etc. */
     align-items: center;
-    /* Adjust this based on your design */
     margin-top: -330px;
-    /* Adjust the top margin as needed */
     margin-left: 10px;
 }
 
@@ -102,17 +100,20 @@ body {
 }
 
 .day-container {
-    display: inline-block;
-    justify-content: space-around;
-    /* Or use other options like space-between, space-evenly, etc. */
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 5px;
-    margin-left: 130px;
-    font-size: 0;
 }
 
 .day-container .dates {
-    /* Adjust the width as needed */
+    text-align: center;
+    font-size: 12px;
+    margin: 0 18px;
+}
+
+
+.day-container .dates {
     text-align: center;
     font-size: 12px;
     margin: 0 18px;
@@ -129,79 +130,79 @@ body {
 }
 
 .container {
-    margin: 50px auto;
-    /* Center the container horizontally */
-    padding: 50px;
+    margin: 60px auto;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgb(161, 149, 149);
     background-color: rgb(249, 235, 222);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: grid;
-    grid-template-columns: auto;
-    /* Center the content */
+    display: block;
     align-items: center;
-    /* Center the content vertically */
     font: 400 20px "sweet-sans-pro", sans-serif;
     --text: #bb5a5f;
     --check: #850107;
     --disabled: #920109;
     width: 700px;
-    /* height: 550px; */
+    height: 500px;
     max-height: 100%;
-    padding: 100px 55px;
+    padding: 100px 50px;
 }
 
-.todoListInput {
+
+#toDoListInput {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: -70px;
+}
+
+#customItem {
+    margin-right: 10px;
+}
+
+.container-header {
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.container-content {
+    justify-content: center;
+}
+
+#toDoListInputContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#toDoListContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .toDoList {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
-    margin-bottom: 1000px;
-    margin-top: -50px;
 }
 
 button {
-    padding: 0.30% 0.80%;
     border: none;
-    border-radius: 100px;
+    border-radius: 5px;
+    padding: 5px 10px;
     background-color: #c46767;
     color: #ffffff;
-    font-size: 0.80vw;
-    /* position: absolute;
-    top: 16%;
-    left: 30%;
-    transform: translateX(-50%); */
+    font-size: 0.70vw;
 }
 
-/* #absTest {
-  position: relative;
-  width: 50%;
-  height: 10px;
+button:hover {
+    background-color: #a54343;
 }
-
-#absItem {
-  position: absolute;
-  right: 0;
-} */
-
-/* #customItem {
-    position: absolute;
-    top: 10vh;
-    left: 9vw;
-    width: 10vw;
-    margin: 10px auto;
-} */
-
-
 
 .toDoList label {
     color: var(--text);
@@ -217,7 +218,6 @@ button {
 
 .toDoList label:first-child {
     margin-top: 10;
-    /* No margin for the first item */
 }
 
 .toDoListContainer {
@@ -226,8 +226,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
+
 
 .toDoList {
     list-style: none;
@@ -235,7 +237,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center items horizontally */
 }
 
 
@@ -248,7 +249,6 @@ input[type="checkbox"]:checked+label {
     animation: move 0.3s ease 0.1s forwards;
 }
 
-/* Rest of the CSS remains the same */
 
 label {
     color: var(--text);
@@ -274,7 +274,6 @@ label::before {
     background: var(--check);
     border-radius: 2px;
     transition: background 0.3s ease;
-    /* the dash before cross out */
 }
 
 label::after {
@@ -292,7 +291,6 @@ input[type="checkbox"] {
     margin: 0 10px 0 0;
     left: -30px;
     top: 32px;
-    /* Adjust the left position as needed */
 }
 
 input[type="checkbox"]::before,
@@ -344,9 +342,7 @@ input[type="checkbox"]:checked+label::after {
     height: 2px;
     width: 8px;
     left: -27px;
-    /* Adjust the left position */
     top: 50%;
-    /* Center the line vertically */
     background: var(--check);
     border-radius: 2px;
     transition: background 0.3s ease;
@@ -358,9 +354,7 @@ input[type="checkbox"]:checked+label::after {
     top: 95%;
     left: -30px;
     margin-top: -15px;
-    /* Adjust to vertically center the checkmark */
     font-size: 16px;
-    /* Adjust font size as needed */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -368,7 +362,6 @@ input[type="checkbox"]:checked+label::after {
 input[type="checkbox"]:checked+label::before {
     background: var(--disabled);
     transform: scaleX(1);
-    /* Display the strike-through */
 }
 
 input[type="checkbox"]:checked+label::after {
